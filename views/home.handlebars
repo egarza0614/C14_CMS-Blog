@@ -1,0 +1,28 @@
+{{!-- Main Layout --}}
+{{> header}}
+
+<h1>Welcome to the Tech Blog</h1>
+
+{{#if loggedIn}}
+  <p>Welcome back, {{username}}!</p>
+  <a href="/logout">Logout</a>
+{{else}}
+  <a href="/login">Login</a>
+{{/if}}
+
+{{#each posts}}
+  <div class="post">
+    <h2>{{this.title}}</h2>
+    <p>By {{this.user.username}} on {{this.createdAt}}</p>
+    <p>{{this.content}}</p>
+    <h3>Comments</h3>
+    {{#each this.comments}}
+      <div class="comment">
+        <p>{{this.comment_text}}</p>
+        <p>By {{this.user.username}} on {{formatDate this.createdAt}}</p>
+      </div>
+    {{/each}}
+  </div>
+{{/each}}
+
+{{> footer}}

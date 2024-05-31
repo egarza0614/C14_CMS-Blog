@@ -18,7 +18,7 @@ CMS-style blog site similar to a Wordpress site, where developers can publish th
 
 ### Usage
 
-1. This application is not deployed. You can review a walkthrough video [here].(https://drive.google.com/file/d/15XIF7OIm9h46decCMmw1NmdirmBgckn2/view?usp=drive_link)
+1. This application is not deployed. You can review a walkthrough video [here]().
 
 ## Questions
 * GitHub: [egarza0614](https://github.com/egarza0614)
