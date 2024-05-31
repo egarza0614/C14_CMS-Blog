@@ -1,4 +1,4 @@
-# C14_CMS Blog
+# C14_TechBlog
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit)
 This project is licensed under the MIT license. You can view the license [here](https://opensource.org/licenses/mit).
@@ -13,12 +13,18 @@ CMS-style blog site similar to a Wordpress site, where developers can publish th
 
 ### Installation
 
-1. Clone this repository.
+1. Clone this [repository](https://github.com/egarza0614/C14_TechBlog).
 2. Install dependencies: `npm install`
+3. Create the database: 
+    psql -U postgres 
+    \i db/schema.sql
+4. Seed the database: `npm run seed`
+5. Start server: Node server.js
+6. Start the application: node index.js
 
 ### Usage
 
-1. This application is not deployed. You can review a walkthrough video [here]().
+1. This application is live [here](https://c14-techblog.onrender.com/).
 
 ## Questions
 * GitHub: [egarza0614](https://github.com/egarza0614)
