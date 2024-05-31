@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS cms-blog_db;
+CREATE DATABASE cms-blog_db;
